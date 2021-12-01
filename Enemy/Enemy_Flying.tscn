@@ -16,10 +16,6 @@ script = ExtResource( 2 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-scale = Vector2( 0.5, 0.5 )
-polygon = PoolVector2Array( 44, -51, 46, 27, 45, 27, 45, 54, 43.7, 54, 41.9, 64, -12.5, 64, -44, 63, -44, 44, -43, -63, -43, -64, 44, -64 )
-
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
 
@@ -28,5 +24,9 @@ position = Vector2( -6.10352e-05, 3.05176e-05 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+polygon = PoolVector2Array( 23.1, -63, 30, -63, 41, -64, 41, -51, 42.2, -43, 41, -43, 40, -16, 41, -16, 41, 7, 41.9, 7, 43.1, 26, 41.8, 26, 40, 35.2, 40, 40.6, 42, 42.6, 42, 52.1, 40.9, 62, -41, 62, -41, 44, -42, -7, -41, -7, -40, -27, -41, -27, -42, -53, -41, -53, -41, -64, -36, -64, 17, -64 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
