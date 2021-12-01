@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/spritesheet_default.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
 [ext_resource path="res://Enemy/Enemy_Flying.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/blue background.jpg" type="Texture" id=4]
+[ext_resource path="res://Assets/2_0.png" type="Texture" id=4]
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=5]
 [ext_resource path="res://Enemy/Enemy_Ground.tscn" type="PackedScene" id=6]
 [ext_resource path="res://HUD/UI.tscn" type="PackedScene" id=7]
@@ -481,8 +481,8 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 position = Vector2( -1.7818, -5.34543 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 947.358, 389.494 )
-scale = Vector2( 2.24283, 1.48018 )
+position = Vector2( 1033.51, -84.3325 )
+scale = Vector2( 1.35024, 0.891107 )
 texture = ExtResource( 4 )
 
 [node name="Background" type="TileMap" parent="."]
@@ -491,7 +491,7 @@ tile_set = SubResource( 1 )
 collision_layer = 0
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 2, 0, 0, 15, 0, 0, 26, 0, 0, 27, 1, 0, 65541, 3, 0, 65543, 1, 0, 65550, 1, 0, 65551, 1, 0, 65552, 2, 0, 131091, 6, 0, 131092, 6, 0, 131093, 6, 0, 196618, 6, 0, 196619, 6, 0, 196620, 6, 0, 196621, 6, 0, 458763, 4, 0, 458767, 5, 0, 458777, 5, 0, 458778, 4, 0, 458779, 4, 0, 458781, 5, 0, 655383, 5, 0, 655384, 5, 0, 655385, 5, 0, 655386, 5, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0 )
+tile_data = PoolIntArray( 2, 0, 0, 15, 0, 0, 26, 0, 0, 27, 1, 0, 65541, 3, 0, 65543, 1, 0, 65550, 1, 0, 65551, 1, 0, 65552, 2, 0, 131091, 6, 0, 131092, 6, 0, 131093, 6, 0, 196618, 6, 0, 196619, 6, 0, 196620, 6, 0, 196621, 6, 0, 458763, 4, 0, 458767, 5, 0, 458777, 5, 0, 458778, 4, 0, 458779, 4, 0, 458781, 5, 0 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 17 )
