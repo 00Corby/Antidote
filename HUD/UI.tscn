@@ -7,11 +7,12 @@
 
 [node name="HUD" type="Control" parent="."]
 margin_left = -1.7818
-margin_top = -5.34543
+margin_top = 0.575499
 margin_right = 38.2182
-margin_bottom = 34.6546
+margin_bottom = 40.5755
 script = ExtResource( 1 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
@@ -47,6 +48,9 @@ margin_bottom = 20.0
 text = "Health"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Menu" type="Control" parent="."]
 pause_mode = 2

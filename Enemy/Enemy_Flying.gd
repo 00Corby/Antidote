@@ -21,3 +21,4 @@ func _on_Area2D_body_entered(body):
 	print("body_entered")
 	if body.name == "Player":
 		body.do_damage(damage)
+		queue_free()
