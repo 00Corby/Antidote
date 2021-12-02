@@ -95,5 +95,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Quit" type="Button" parent="Menu"]
+margin_left = 462.0
+margin_top = 420.0
+margin_right = 562.0
+margin_bottom = 460.0
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Menu/Save" to="Menu" method="_on_Save_pressed"]
 [connection signal="pressed" from="Menu/Load" to="Menu" method="_on_Load_pressed"]
+[connection signal="pressed" from="Menu/Quit" to="Menu" method="_on_Quit_pressed"]

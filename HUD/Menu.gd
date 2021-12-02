@@ -9,3 +9,7 @@ func _on_Save_pressed():
 
 func _on_Load_pressed():
 	Global.load_game(0)
+
+
+func _on_Quit_pressed():
+	get_tree().quit()
