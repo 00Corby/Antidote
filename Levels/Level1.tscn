@@ -1099,7 +1099,7 @@ tile_data = PoolIntArray( 65533, 28, 0, 30, 30, 0, 196605, 26, 0, 131102, 29, 0,
 tile_set = SubResource( 37 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 589846, 10, 0, 589848, 11, 0, 589850, 12, 0, 589852, 11, 0, 589854, 11, 0, 655381, 32, 0 )
+tile_data = PoolIntArray( 196627, 32, 0, 262155, 32, 0, 589846, 10, 0, 589848, 11, 0, 589850, 12, 0, 589852, 11, 0, 589854, 11, 0, 655381, 32, 0 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 5 )
