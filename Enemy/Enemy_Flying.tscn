@@ -31,7 +31,7 @@ scale = 0.1
 scale_curve = SubResource( 4 )
 color_ramp = SubResource( 2 )
 
-<<<<<<< HEAD
+
 [sub_resource type="CanvasItemMaterial" id=6]
 blend_mode = 1
 
@@ -49,7 +49,7 @@ position = Vector2( 640, 51 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-<<<<<<< HEAD
+
 position = Vector2( 0, 10 )
 scale = Vector2( 0.05, 0.05 )
 
@@ -65,7 +65,7 @@ lifetime = 0.5
 process_material = SubResource( 5 )
 texture = ExtResource( 3 )
 
-<<<<<<< HEAD
+
 [node name="Select" type="Sprite" parent="."]
 modulate = Color( 0.901961, 0.0196078, 0.976471, 1 )
 material = SubResource( 6 )
@@ -74,7 +74,6 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 1 )
 
 
->>>>>>> 263de5999e54496ef107b73b265cd8343f1ed17c
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
 
@@ -85,7 +84,7 @@ position = Vector2( -6.10352e-05, 3.05176e-05 )
 shape = SubResource( 6 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-<<<<<<< HEAD
+
 position = Vector2( 0.0411663, -0.701343 )
 scale = Vector2( 1.28333, 0.270586 )
 polygon = PoolVector2Array( 23.1, -63, 30, -63, 41, -64, 41, -51, 42.2, -43, 41, -43, 40, -16, 41, -16, 41, 7, 41.9, 7, 43.1, 26, 41.8, 26, 40, 35.2, 40, 40.6, 42, 42.6, 42, 52.1, 40.9, 62, -41, 62, -41, 44, -42, -7, -41, -7, -40, -27, -41, -27, -42, -53, -41, -53, -41, -64, -36, -64, 17, -64 )
