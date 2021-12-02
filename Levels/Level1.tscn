@@ -1148,6 +1148,7 @@ script = ExtResource( 5 )
 script = ExtResource( 10 )
 
 [node name="Enemy_Flying" parent="Enemy_Container" instance=ExtResource( 6 )]
+position = Vector2( 1170.17, 406.947 )
 
 [node name="Enemy_Ground" parent="Enemy_Container" instance=ExtResource( 6 )]
 position = Vector2( 925, 543.18 )
