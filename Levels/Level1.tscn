@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Assets/spritesheet_default.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://HUD/Music.gd" type="Script" id=13]
 [ext_resource path="res://Assets/groundset1.png" type="Texture" id=14]
 [ext_resource path="res://Assets/connectedground.png" type="Texture" id=15]
+[ext_resource path="res://Assets/CaveScenery1.png" type="Texture" id=16]
 [ext_resource path="res://Assets/SpritesheetCave1.png" type="Texture" id=17]
 
 [sub_resource type="TileSet" id=1]
@@ -116,6 +117,62 @@
 6/shape_one_way_margin = 0.0
 6/shapes = [  ]
 6/z_index = 0
+7/name = "SpritesheetCave1.png 7"
+7/texture = ExtResource( 17 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 34, 79, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "SpritesheetCave1.png 8"
+8/texture = ExtResource( 17 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 1027, 26, 66, 83 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "SpritesheetCave1.png 9"
+9/texture = ExtResource( 17 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 1093, 26, 55, 83 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "SpritesheetCave1.png 10"
+10/texture = ExtResource( 17 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 1184, 0, 49, 111 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
 
 [sub_resource type="OccluderPolygon2D" id=2]
 polygon = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -171,11 +228,38 @@ points = PoolVector2Array( 160, 128, 0, 128, 0, 0, 160, 0 )
 [sub_resource type="ConvexPolygonShape2D" id=19]
 points = PoolVector2Array( 4, 13, 23, 13, 44, 9, 138, 9, 145, 14, 155, 14, 154, 187, 10, 188, 9, 94, 6, 48 )
 
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 128, 64, 0, 64, 0, 32, 128, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+points = PoolVector2Array( 128, 64, 0, 64, 0, 32, 128, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 104, 162, 0, 162, 0, 0, 104, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 106, 159, 0.809998, 159, 0.809998, 0, 106, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( 108, 159, 0, 159, 0, 0, 108, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 0, 0, 105.363, 0, 105.363, 159, 0, 159 )
+
 [sub_resource type="OccluderPolygon2D" id=20]
 polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=21]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( 0, 0, 109, 0, 109, 162, 0, 162 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+points = PoolVector2Array( 0, 0, 102, 0, 102, 161, 0, 161 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+points = PoolVector2Array( 0, 6.16666, 0.5, 6.16666, 69.9445, 2.69443, 149.111, 9.63889, 123.417, 58.9445, 19.9445, 58.25, 3.97223, 37.4167 )
 
 [sub_resource type="OccluderPolygon2D" id=22]
 polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -587,6 +671,195 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 23/z_index = 0
+24/name = "SpritesheetCave1.png 24"
+24/texture = ExtResource( 17 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 2, -12, 128, 64 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape = SubResource( 30 )
+24/shape_one_way = false
+24/shape_one_way_margin = 1.0
+24/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 30 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+24/z_index = 0
+25/name = "SpritesheetCave1.png 25"
+25/texture = ExtResource( 17 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 34, -12, 128, 64 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape = SubResource( 31 )
+25/shape_one_way = false
+25/shape_one_way_margin = 1.0
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 31 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+25/z_index = 0
+26/name = "SpritesheetCave1.png 26"
+26/texture = ExtResource( 17 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 179, 173, 104, 162 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape = SubResource( 32 )
+26/shape_one_way = false
+26/shape_one_way_margin = 1.0
+26/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+26/z_index = 0
+27/name = "SpritesheetCave1.png 27"
+27/texture = ExtResource( 17 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 312, 173, 106, 159 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape = SubResource( 33 )
+27/shape_one_way = false
+27/shape_one_way_margin = 1.0
+27/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 33 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+27/z_index = 0
+28/name = "SpritesheetCave1.png 28"
+28/texture = ExtResource( 17 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 453, 177, 108, 159 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape = SubResource( 34 )
+28/shape_one_way = false
+28/shape_one_way_margin = 1.0
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 34 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+28/z_index = 0
+29/name = "SpritesheetCave1.png 29"
+29/texture = ExtResource( 17 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 630, 177, 106, 159 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape = SubResource( 35 )
+29/shape_one_way = false
+29/shape_one_way_margin = 1.0
+29/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 35 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+29/z_index = 0
+30/name = "SpritesheetCave1.png 30"
+30/texture = ExtResource( 17 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 769, 172, 109, 162 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape = SubResource( 36 )
+30/shape_one_way = false
+30/shape_one_way_margin = 1.0
+30/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 36 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+30/z_index = 0
+31/name = "SpritesheetCave1.png 31"
+31/texture = ExtResource( 17 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 907, 174, 102, 161 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape = SubResource( 37 )
+31/shape_one_way = false
+31/shape_one_way_margin = 1.0
+31/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 37 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+31/z_index = 0
+32/name = "SpritesheetCave1.png 32"
+32/texture = ExtResource( 17 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 2, 244, 152, 90 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape = SubResource( 38 )
+32/shape_one_way = false
+32/shape_one_way_margin = 1.0
+32/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 38 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+32/z_index = 0
 
 [sub_resource type="TileSet" id=29]
 0/name = "spritesheet_default.png 0"
@@ -743,6 +1016,62 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 10/shape_one_way_margin = 0.0
 10/shapes = [  ]
 10/z_index = 0
+11/name = "SpritesheetCave1.png 11"
+11/texture = ExtResource( 17 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 1093, 21, 55, 89 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "SpritesheetCave1.png 12"
+12/texture = ExtResource( 17 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 1027, 21, 66, 89 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "SpritesheetCave1.png 13"
+13/texture = ExtResource( 17 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 1183, 0, 51, 104 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "CaveScenery1.png 14"
+14/texture = ExtResource( 16 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 112, 9, 46, 46 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
 
 [node name="Game" type="Node2D"]
 position = Vector2( -1.7818, -5.34543 )
@@ -753,23 +1082,24 @@ scale = Vector2( 1.35024, 0.891107 )
 texture = ExtResource( 4 )
 
 [node name="Background" type="TileMap" parent="."]
-modulate = Color( 0.533333, 0.533333, 0.533333, 0.737255 )
+modulate = Color( 0.533333, 0.533333, 0.533333, 1 )
 tile_set = SubResource( 1 )
 collision_layer = 0
 collision_mask = 0
 format = 1
+tile_data = PoolIntArray( 458754, 7, 0, 458755, 7, 0, 458756, 7, 0, 458757, 7, 0, 524290, 7, 0, 524291, 7, 0, 524292, 7, 0, 524293, 7, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 28 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 655358, 17, 0, 589824, 17, 0, 589826, 17, 0, 589828, 17, 0, 589830, 17, 0, 589832, 17, 0, 589834, 17, 0, 589836, 17, 0, 589838, 17, 0 )
+tile_data = PoolIntArray( 65533, 28, 0, 30, 30, 0, 196605, 26, 0, 131102, 29, 0, 327677, 28, 0, 262174, 31, 0, 458749, 27, 0, 393218, 24, 0, 393220, 25, 0, 393246, 29, 0, 589821, 26, 0, 524318, 30, 0, 655358, 21, 0, 589824, 22, 0, 589826, 21, 0, 589828, 20, 0, 589830, 20, 0, 589832, 21, 0, 589834, 22, 0, 589836, 21, 0, 589838, 20, 0, 589840, 22, 0, 589842, 21, 0, 589848, 22, 0, 589850, 21, 0, 589852, 20, 0 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 28 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 589846, 10, 0, 589848, 11, 0, 589850, 12, 0, 589852, 11, 0, 589854, 11, 0 )
+tile_data = PoolIntArray( 589846, 10, 0, 589848, 11, 0, 589850, 12, 0, 589852, 11, 0, 589854, 11, 0, 655381, 32, 0 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 5 )
@@ -807,6 +1137,7 @@ tile_set = SubResource( 29 )
 collision_layer = 0
 collision_mask = 0
 format = 1
+tile_data = PoolIntArray( 393214, 14, 0, 458755, 13, 0, 458756, 14, 0, 589823, 12, 0, 524290, 12, 0, 524294, 12, 0, 524298, 11, 0, 524302, 11, 0, 589842, 14, 0, 589849, 14, 0 )
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2( 114, 278 )
