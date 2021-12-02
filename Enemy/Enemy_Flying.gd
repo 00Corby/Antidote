@@ -4,7 +4,7 @@ var player = null
 onready var ray = $RayCast2D
 export var speed = 200
 export var looking_speed = 100
-export var damage = 100
+export var damage = 10
 	
 func _physics_process(_delta):
 	player = get_node_or_null("/root/Game/Player_Container/Player")
