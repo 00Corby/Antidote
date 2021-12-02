@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://Assets/spritesheet_default.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -10,13 +10,16 @@
 [ext_resource path="res://Coin/Coin.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Coin/Coin_Container.gd" type="Script" id=9]
 [ext_resource path="res://Enemy/Enemy_Container.gd" type="Script" id=10]
-[ext_resource path="res://Assets/Child's Nightmare.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Center Of The Earth (1).ogg" type="AudioStream" id=11]
 [ext_resource path="res://Assets/mario.wav" type="AudioStream" id=12]
 [ext_resource path="res://HUD/Music.gd" type="Script" id=13]
 [ext_resource path="res://Assets/groundset1.png" type="Texture" id=14]
 [ext_resource path="res://Assets/connectedground.png" type="Texture" id=15]
 [ext_resource path="res://Assets/CaveScenery1.png" type="Texture" id=16]
 [ext_resource path="res://Assets/SpritesheetCave1.png" type="Texture" id=17]
+[ext_resource path="res://Levels/Portal.gd" type="Script" id=18]
+[ext_resource path="res://Assets/cauldron.png" type="Texture" id=19]
+[ext_resource path="res://Assets/ballBlue_01.png" type="Texture" id=20]
 
 [sub_resource type="TileSet" id=1]
 0/name = "spritesheet_default.png 0"
@@ -861,6 +864,44 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 } ]
 32/z_index = 0
 
+[sub_resource type="Gradient" id=39]
+offsets = PoolRealArray( 0.0114286, 1 )
+colors = PoolColorArray( 0.992188, 0.988312, 0.988312, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=40]
+gradient = SubResource( 39 )
+
+[sub_resource type="Curve" id=41]
+min_value = -1.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, -1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=42]
+curve = SubResource( 41 )
+
+[sub_resource type="Curve" id=43]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.505051, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.490909 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=44]
+curve = SubResource( 43 )
+
+[sub_resource type="ParticlesMaterial" id=45]
+emission_shape = 2
+emission_box_extents = Vector3( 0.2, 0.2, 1 )
+flag_disable_z = true
+direction = Vector3( 1, -25, 1 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 200.0
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = -0.2
+scale = 0.1
+scale_curve = SubResource( 44 )
+color_ramp = SubResource( 40 )
+hue_variation = 1.0
+hue_variation_random = 1.0
+hue_variation_curve = SubResource( 42 )
+
 [sub_resource type="TileSet" id=38]
 0/name = "spritesheet_default.png 0"
 0/texture = ExtResource( 1 )
@@ -1132,6 +1173,34 @@ position = Vector2( 924.896, 547.301 )
 [node name="Coin5" parent="Coin_Container" instance=ExtResource( 8 )]
 position = Vector2( 1504.72, 548.715 )
 
+[node name="Portal" type="Area2D" parent="."]
+modulate = Color( 1.5, 5, 1.5, 1 )
+position = Vector2( 1871, 546 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Portal"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 19 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Portal"]
+scale = Vector2( 0.2, 0.2 )
+polygon = PoolVector2Array( -11, -194, -4, -189, -4, -186, -2.7, -176, -5.10001, -176, -13.1, -167, -20.7, -167, -30, -174, -30, -177, -31.2, -189, -28.7, -189, -23, -193.9, -23, -196, -11, -196 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Portal"]
+scale = Vector2( 0.2, 0.2 )
+polygon = PoolVector2Array( 1, -159.3, 1, -156.4, 2.39999, -149, -0.100006, -149, -5.10001, -143, -10.7, -143, -18, -149.1, -18, -158.1, -12, -162.1, -12, -165.1 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Portal"]
+scale = Vector2( 0.2, 0.2 )
+polygon = PoolVector2Array( -12, -139.1, -12, -136, 20.1, -136, 133, -128.9, 133, -127.8, 154, -124.7, 154, -123.3, 171, -116.3, 171, -114.7, 175, -109.7, 175, -102.7, 173.4, -98, 172, -98, 168, -93, 165.4, -93, 154, -87.8, 154, -86.9, 152.3, -75, 153.8, -65, 154.4, -65, 174, -8.3, 174, -3, 178, 13.8, 178, 36, 176.7, 36, 171.7, 64, 170.3, 64, 163.3, 80, 162.3, 80, 156.2, 91, 154.9, 91, 138.9, 108, 136.7, 108, 127, 115, 127, 121.2, 125.2, 122.1, 128.9, 132, 126.8, 132, 125.3, 144, 126.5, 144, 140, 151.9, 140, 158.7, 139, 160, 142.8, 160, 155, 172.2, 155, 187.6, 151.1, 194, 145.9, 194, 138.9, 183, 121, 186.4, 121, 184.1, 115, 180.1, 115, 177.5, 112.9, 174, 106.2, 174, 102, 169.8, 102, 162.7, 102.5, 161.3, 87, 146.9, 87, 138.2, 90.8, 134.4, 89.7, 134, 68.4, 142, 64.4, 142, 42.2, 147, 34, 147, -26, 149, -26, 147.8, -62, 143.8, -62, 142.5, -91.6, 134.3, -90, 136.3, -90, 146, -91.9, 146, -96.9, 154, -99.3, 154, -106, 159, -106, 161.1, -107.2, 171, -115.2, 171, -124, 183, -131.4, 183, -140.8, 179.6, -152.5, 191.4, -155, 190.3, -155, 188.5, -159, 181.5, -159, 171.7, -157.4, 167, -156.1, 167, -151.1, 159, -148.2, 159, -140.4, 158.2, -144, 153.7, -144, 150.3, -140, 145, -137.4, 145, -128, 141.6, -128, 121, -129, 121, -129, 115, -129.8, 115, -162, 82.8, -162, 80.6, -171, 66.6, -171, 63.3, -178, 41.3, -178, 12.8, -171.6, -19, -170.4, -19, -152, -75.3, -152, -81.5, -155.3, -88, -156.5, -88, -173, -96.8, -173, -99.6, -175.4, -113, -172.7, -113, -161.7, -122, -158.1, -122, -131.3, -129, -124.1, -129, -32, -134.9, -32, -139, -25, -144, -25, -145.2, -22.9, -146.3 )
+
+[node name="Particles2D" type="Particles2D" parent="Portal"]
+process_material = SubResource( 45 )
+texture = ExtResource( 20 )
+
 [node name="Foreground" type="TileMap" parent="."]
 tile_set = SubResource( 38 )
 collision_layer = 0
@@ -1165,4 +1234,5 @@ script = ExtResource( 13 )
 [node name="1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_entered"]
 [connection signal="finished" from="Music" to="Music" method="_on_Music_finished"]
