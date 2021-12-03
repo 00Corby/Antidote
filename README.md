@@ -1,1 +1,34 @@
-Antidote
+# Project Name
+Antidote, November 2021
+
+## Theme
+We interact with the theme by making a game where your character is poisoned and you have to find/make/buy the antidote!
+
+## Game Play
+Cure your poisoning by getting enough points (Getting coins and ingredients)
+Use W to jump, use A to move left, and D to move right
+
+## Impediments
+We had an issue with both level and flying enemies with Parsing errors but managed to get everything fixed
+
+## Implementation
+Health Bar
+Score
+Save
+Load
+Open Screen
+Win Screen
+Lose Screen
+Enemies
+Costum Enemy sprites
+Costum Tile set
+## Assets
+Font used: Blood Crow - https://www.1001freefonts.com/blood-crow.font
+Background used : https://opengameart.org/content/2d-backgrounds-for-platformer-game-dungeons-and-cave-parallax-vector-illustration
+
+## References
+
+## Future Development
+None planned. . .yet
+# Created by: Antidote
+Corbin Maze (Coding, Debugging, and made Start menu, win screen, and found background),
