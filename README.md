@@ -7,7 +7,7 @@ We interact with the theme by making a game where your character is poisoned and
 ## Game Play
 Cure your poisoning by getting enough points (Getting coins and ingredients)
 Use W to jump, use A to move left, and D to move right
-
+![gameplayScreenshot](https://github.com/00Corby/Antidote/blob/main/GameScreenshot.PNG)
 
 ## Impediments
 We had an issue with both level and flying enemies with Parsing errors but managed to get everything fixed
