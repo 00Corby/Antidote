@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://Assets/spritesheet_default.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://Assets/cauldron.png" type="Texture" id=19]
 [ext_resource path="res://Assets/ballBlue_01.png" type="Texture" id=20]
 [ext_resource path="res://Coin/Herb.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Enemy/Enemy_Flying.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Coin/Grass.tscn" type="PackedScene" id=23]
 
 [sub_resource type="TileSet" id=1]
 0/name = "spritesheet_default.png 0"
@@ -1164,6 +1166,7 @@ tile_data = PoolIntArray( 196627, 32, 0, 262155, 32, 0, 589846, 10, 0, 589848, 1
 script = ExtResource( 5 )
 
 [node name="Enemy_Container" type="Node2D" parent="."]
+position = Vector2( -1.7818, -31.1815 )
 script = ExtResource( 10 )
 
 [node name="Enemy_Flying" parent="Enemy_Container" instance=ExtResource( 6 )]
@@ -1177,6 +1180,12 @@ position = Vector2( 925, 543.18 )
 damage = 20
 max_constraint = 1190
 min_constraint = 660
+
+[node name="Enemy_Flying2" parent="Enemy_Container" instance=ExtResource( 22 )]
+position = Vector2( 550.477, 1094.2 )
+
+[node name="Enemy_Flying3" parent="Enemy_Container" instance=ExtResource( 22 )]
+position = Vector2( 983.274, 127.99 )
 
 [node name="Coin_Container" type="Node2D" parent="."]
 script = ExtResource( 9 )
@@ -1331,6 +1340,24 @@ randomness = 0.25
 visibility_rect = Rect2( -160, -1000, 2000, 1200 )
 process_material = SubResource( 47 )
 texture = ExtResource( 20 )
+
+[node name="Grass" parent="." instance=ExtResource( 23 )]
+position = Vector2( 246.02, 364.741 )
+
+[node name="Grass2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1273.6, 537.966 )
+
+[node name="Grass3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1873.18, 391.65 )
+
+[node name="Grass4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1551.96, 1264.55 )
+
+[node name="Grass5" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1042.38, 1814.49 )
+
+[node name="Grass6" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1853, 1148.5 )
 
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_entered"]
 [connection signal="finished" from="Music" to="Music" method="_on_Music_finished"]
