@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Menus/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/bloodcrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Menu.PNG" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -19,6 +20,10 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Menu" type="Sprite" parent="."]
+position = Vector2( 495, 290 )
+texture = ExtResource( 3 )
 
 [node name="Background" type="ColorRect" parent="."]
 margin_right = 1024.0
